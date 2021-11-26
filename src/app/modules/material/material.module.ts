@@ -4,6 +4,9 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTabsModule } from "@angular/material/tabs"
+import { MatTableModule } from "@angular/material/table"
+import { MatSortModule } from "@angular/material/sort";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
 @NgModule({
   imports: [
@@ -11,14 +14,20 @@ import { MatTabsModule } from "@angular/material/tabs"
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule
   ],
   exports: [
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule
   ]
 })
 

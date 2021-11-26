@@ -11,6 +11,7 @@ import { Report1Component } from './components/report1/report1.component';
 import { Report2Component } from './components/report2/report2.component';
 import { Report3Component } from './components/report3/report3.component';
 import { Report4Component } from './components/report4/report4.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { Report4Component } from './components/report4/report4.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule
   ],
   providers: [],
