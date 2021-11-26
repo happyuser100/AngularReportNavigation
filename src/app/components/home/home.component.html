@@ -1,0 +1,55 @@
+<div class="padLeft">
+
+  <app-main-tool-bar (currentReportChange) ="currentReportChange($event)" ></app-main-tool-bar>
+
+  <mat-tab-group animationDuration="0ms" [(selectedIndex)]="selectedTabId" (selectedTabChange)="tabChanged($event)">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div [ngClass]="{'tabRectSelected': selectedTabId==0, 'tabRect': selectedTabId!=0}">
+          <div [ngClass]="{'tabTextSelected': selectedTabId==0,'tabText': selectedTabId!=0}">
+            {{lblReport1}}</div>
+        </div>
+      </ng-template>
+      <ng-template matTabContent>
+        <app-report1></app-report1>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div [ngClass]="{'tabRectSelected': selectedTabId==1, 'tabRect': selectedTabId!=1}">
+          <div [ngClass]="{'tabTextSelected': selectedTabId==1,'tabText': selectedTabId!=1}">
+            {{lblReport2}}
+          </div>
+        </div>
+      </ng-template>
+      <ng-template matTabContent>
+        <app-report2></app-report2>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div [ngClass]="{'tabRectSelected': selectedTabId==2, 'tabRect': selectedTabId!=2}">
+          <div [ngClass]="{'tabTextSelected': selectedTabId==2,'tabText': selectedTabId!=2}">
+            {{lblReport3}}
+          </div>
+        </div>
+      </ng-template>
+      <ng-template matTabContent>
+        <app-report3></app-report3>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <div [ngClass]="{'tabRectSelected': selectedTabId==3, 'tabRect': selectedTabId!=3}">
+          <div [ngClass]="{'tabTextSelected': selectedTabId==3,'tabText': selectedTabId!=3}">
+            {{lblReport4}}
+          </div>
+        </div>
+      </ng-template>
+      <ng-template matTabContent>
+        <app-report4></app-report4>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

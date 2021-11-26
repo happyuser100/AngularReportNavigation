@@ -1,0 +1,73 @@
+.padLeft
+{
+  padding-left: 20px;
+}
+
+.tabRect {
+  display: table;
+  background: #FFFFFF 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #C8C7D2;
+  border-radius: 15px 15px 0px 0px;
+  opacity: 1;
+  width: 270px;
+  height: 43px;
+}
+
+.tabRectSelected {
+  display: table;
+  background: #673ab7 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px 15px 0px 0px;
+  opacity: 1;
+  width: 270px;
+  height: 43px;
+}
+
+.tabText {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font: normal normal medium 20px/24px Roboto !important;
+  letter-spacing: 0.4px;
+  color: #673ab7 !important;
+  opacity: 1;
+  width: 270px;
+  height: 24px;
+}
+
+
+::ng-deep.mat-tab-label,
+::ng-deep.mat-tab-label-active {
+  padding: 3px !important;
+  margin: 3px !important;
+}
+
+.tabTextSelected {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font: normal normal medium 20px/24px Roboto !important;
+  letter-spacing: 0.4px;
+  color: #F5F5F5 !important;
+  opacity: 1;
+  width: 270px;
+  height: 24px;
+}
+
+::ng-deep.mat-tab-label,
+::ng-deep.mat-tab-label-active {
+  padding: 3px !important;
+  margin: 3px !important;
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+  padding-bottom: 0px !important;
+  border-bottom: 0px solid #005DAC !important;
+}
+
+.mat-tab-label {
+  padding: 0px !important;
+  opacity: 1 !important;
+}
